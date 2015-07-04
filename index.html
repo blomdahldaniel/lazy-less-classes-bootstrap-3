@@ -1,0 +1,170 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>lazy-less-classesootstrap-3</title>
+    <meta name="description" content="Classes that saves time and give strong customization for Twitter Bootstrap 3. The Classes are written in Less.">
+    <meta name="author" content="Daniel Blomdahl">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" media="screen" href="//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <link media="all" type="text/css" rel="stylesheet" href="dist/all-my-lazy-stuff.min.css">
+
+</head>
+<body style="padding: 70px 0;">
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header text-center">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a  class="navbar-brand" href="https://github.com/blomdahldaniel/lazy-less-classes-bootstrap-3"><i class="fa fa-github"></i> lazy-less-classesootstrap-3</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="row">
+
+        <div class="col-md-10 col-md-offset-1">
+            <div class="panel panel-default">
+                <div class="panel-heading"><i class="fa fa-gear fa-spin font-s-16"></i> Lazy-classes</div>
+
+                <div class="panel-body">
+                    <h4>lazy-stuff</h4>
+                    <p>
+                        Here are the classes that I have built up to ease the work around bootstrap.. I have my <code>lazy-color-classes</code> and my <code>lazy-font-size-classes</code>
+                        <br>
+                       Just by adding a class on a object you can provide powerful object colors / font size in a simple and bootstrap similar manner.
+                       They are therefore the classes that I think Bootstrap should already have installed.
+                       I have extended bootstraps own <code>text-"color"</code> to include the shades of gray.
+                    </p>
+                    <br>
+                    <p>The less files are located in <code>resources/assets/less/frontend/lazy-stuff/lazy-stuff/</code></p>
+                    <p>The one file to rule them all <code>all-my-lazy-stuff.less</code> which imports (<code>@import</code>) the rest and spit out both full and minified versions. Located inside <code>dist/</code></p>
+                </div>
+            </div><!-- panel -->
+            <div class="panel panel-default">
+                <div class="panel-heading">Mixins</div>
+                <div class="panel-body">
+                    <h4><code>lazy-stuff/mixins.less</code></h4>
+                    <p>
+                        I have done some mixins to ease the process of creating the color-classes. It is verry easy to set up your own color classes for example if you want to add the new Spotify color <span style="color: #2EBD59;">#2EBD59</span>, you just add <code>.generate-text-color(#2EBD59, spotify);</code> and this will yeald a new class with hover effects as well. <br>
+                        You can call it threw <span style="color: #2EBD59;">class="text-spotify"</span>, the hover classes are also applied.
+                    </p>
+                </div>
+            </div><!-- panel -->
+
+            <div class="panel panel-info">
+                <div class="panel-heading">Hover</div>
+                <div class="panel-body">
+                    <h3>Hover-functions</h3>
+                    <p>
+                        <h4><code>element-color-hover</code></h4>
+                        Write out elementet-color-hover. for example: <span class="text-danger bg-warning-hover">&lt;class="text-danger bg-warning-hover"&gt;</span>
+                    </p>
+                    <h4>Parent nesting</h4>
+                    <p>
+                        Often what you want for a hover is just a <code>darken(@color, 10%)</code>.
+                        <br>
+                        And as simple as that, you can write out: <code>element-color element-hover</code>
+                    </p>
+                    <h4 class="text-primary text-hover col-xs-12 col-sm-6 col-md-4">class="text-primary text-hover"</h4>
+                    <pre class="bg-danger bg-hover col-xs-12 col-sm-6 col-md-4">class="bg-danger bg-hover"</pre>
+                    <pre class="border-warning border-hover col-xs-12 col-sm-6 col-md-4">class="border-warning border-hover"</pre>
+                    <h4 class="col-xs-12">Maxed out stuff</h4>
+                    <pre class="text-gray-light text-white-hover bg-gray-lighter bg-hover border-success border-danger-hover col-xs-12 col-sm-12">class="text-gray-light text-white-hover bg-gray-lighter bg-hover border-success border-danger-hover"</pre>
+                </div>
+            </div><!-- panel -->
+
+            <div class="panel panel-success">
+                <div class="panel-heading"><i class="fa fa-paint-brush"></i> My lazy color classes</div>
+                <div class="panel-body">
+                    <h5><code>resources/assets/less/frontend/lazy-stuff/lazy-stuff/</code></h5>
+                    <h5><code>bg-color.less</code></h5>
+                    <h5><code>border-color.less</code></h5>
+                    <h5><code>text-color.less</code></h5>
+
+                    <p>
+                        <br>
+                        <br>
+                        Example: <code>&lt;div class="text-white border-danger bg-gray-light"&gt;Lorem ipsum.&lt;div&gt;</code> ger följande utseende:
+                        <div class="text-white border-danger bg-gray-light">Lorem ipsum.</div>
+                        <br><br>
+                        För alla exempel så har den aktuella klassen lagts till objektet <code>&lt;pre&gt;</code>
+                    </p>
+                    <h3 class="col-xs-12">text-color <small> for hover 10% darken, add <code>text-hover</code></small></h3>
+                    <pre class="text-primary col-xs-12 col-sm-6 col-md-3">class="text-primary"</pre>
+                    <pre class="text-success col-xs-12 col-sm-6 col-md-3">class="text-success"</pre>
+                    <pre class="text-info col-xs-12 col-sm-6 col-md-3">class="text-info"</pre>
+                    <pre class="text-warning col-xs-12 col-sm-6 col-md-3">class="text-warning"</pre>
+                    <pre class="text-danger col-xs-12 col-sm-6 col-md-3">class="text-danger"</pre>
+                    <pre class="text-white col-xs-12 col-sm-6 col-md-3">class="text-white"</pre>
+                    <pre class="text-gray-lighter col-xs-12 col-sm-6 col-md-3">class="text-gray-lighter"</pre>
+                    <pre class="text-gray-light col-xs-12 col-sm-6 col-md-3">class="text-gray-light"</pre>
+                    <pre class="text-gray col-xs-12 col-sm-6 col-md-3">class="text-gray"</pre>
+                    <pre class="text-gray-dark col-xs-12 col-sm-6 col-md-3">class="text-gray-dark"</pre>
+                    <pre class="text-gray-darker col-xs-12 col-sm-6 col-md-3">class="text-gray-darker"</pre>
+
+                    <h3 class="col-xs-12">bg-color <small> for hover 10% darken, add <code>bg-hover</code></h3>
+                    <pre class="bg-primary col-xs-12 col-sm-6 col-md-3">class="bg-primary"</pre>
+                    <pre class="bg-success col-xs-12 col-sm-6 col-md-3">class="bg-success"</pre>
+                    <pre class="bg-info col-xs-12 col-sm-6 col-md-3">class="bg-info"</pre>
+                    <pre class="bg-warning col-xs-12 col-sm-6 col-md-3">class="bg-warning"</pre>
+                    <pre class="bg-danger col-xs-12 col-sm-6 col-md-3">class="bg-danger"</pre>
+                    <pre class="bg-white col-xs-12 col-sm-6 col-md-3">class="bg-white"</pre>
+                    <pre class="bg-gray-lighter col-xs-12 col-sm-6 col-md-3">class="bg-gray-lighter"</pre>
+                    <pre class="bg-gray-light col-xs-12 col-sm-6 col-md-3">class="bg-gray-light"</pre>
+                    <pre class="bg-gray col-xs-12 col-sm-6 col-md-3">class="bg-gray"</pre>
+                    <pre class="bg-gray-dark col-xs-12 col-sm-6 col-md-3">class="bg-gray-dark"</pre>
+                    <pre class="bg-gray-darker col-xs-12 col-sm-6 col-md-3">class="bg-gray-darker"</pre>
+
+                    <h3 class="col-xs-12">border-color <small> for hover 10% darken, add <code>border-hover</code></small></h3>
+                    <div class="col-xs-12">
+                        <p>
+                            For adjustable border width, either change the mixin or pass it to the <code>.generate-border-color()</code> as the third parameter.
+                            <br>
+                            Example: <code>.generate-border-color(#2EBD59, spotify, 4px);</code>
+                            <br>
+                            The parameter order: color, class-name, border-width
+                        </p>
+                        <br>
+                    </div>
+                    <pre class="border-primary col-xs-12 col-sm-6 col-md-3">class="border-primary"</pre>
+                    <pre class="border-success col-xs-12 col-sm-6 col-md-3">class="border-success"</pre>
+                    <pre class="border-info col-xs-12 col-sm-6 col-md-3">class="border-info"</pre>
+                    <pre class="border-warning col-xs-12 col-sm-6 col-md-3">class="border-warning"</pre>
+                    <pre class="border-danger col-xs-12 col-sm-6 col-md-3">class="border-danger"</pre>
+                    <pre class="border-white col-xs-12 col-sm-6 col-md-3">class="border-white"</pre>
+                    <pre class="border-gray-lighter col-xs-12 col-sm-6 col-md-3">class="border-gray-lighter"</pre>
+                    <pre class="border-gray-light col-xs-12 col-sm-6 col-md-3">class="border-gray-light"</pre>
+                    <pre class="border-gray col-xs-12 col-sm-6 col-md-3">class="border-gray"</pre>
+                    <pre class="border-gray-dark col-xs-12 col-sm-6 col-md-3">class="border-gray-dark"</pre>
+                    <pre class="border-gray-darker col-xs-12 col-sm-6 col-md-3">class="border-gray-darker"</pre>
+                </div>
+            </div><!-- panel -->
+            <div class="panel panel-info">
+                <div class="panel-heading"><i class="fa fa-font"></i> My lazy font sizes</div>
+
+                <div class="panel-body">
+                    <h5><code>resources/assets/less/frontend/lazy-stuff/lazy-stuff/lazy-color.less</code></h5>
+                    <p>Lazy font sizes to quickly control the DOM and to add to your less classes.</p>
+                    <pre>font-size: *pt; //6->30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90</pre>
+                    <p class="font-s-6">class="font-s-6"</p><p class="font-s-7">class="font-s-7"</p><p class="font-s-8">class="font-s-8"</p><p class="font-s-9">class="font-s-9"</p><p class="font-s-10">class="font-s-10"</p><p class="font-s-11">class="font-s-11"</p><p class="font-s-12">class="font-s-12"</p><p class="font-s-13">class="font-s-13"</p><p class="font-s-14">class="font-s-14"</p><p class="font-s-15">class="font-s-15"</p><p class="font-s-16">class="font-s-16"</p><p class="font-s-17">class="font-s-17"</p><p class="font-s-18">class="font-s-18"</p><p class="font-s-19">class="font-s-19"</p><p class="font-s-20">class="font-s-20"</p><p class="font-s-21">class="font-s-21"</p><p class="font-s-22">class="font-s-22"</p><p class="font-s-23">class="font-s-23"</p><p class="font-s-24">class="font-s-24"</p><p class="font-s-25">class="font-s-25"</p><p class="font-s-26">class="font-s-26"</p><p class="font-s-27">class="font-s-27"</p><p class="font-s-28">class="font-s-28"</p><p class="font-s-29">class="font-s-29"</p><p class="font-s-30">class="font-s-30"</p><p class="font-s-35">class="font-s-35"</p><p class="font-s-40">class="font-s-40"</p><p class="font-s-45">class="font-s-45"</p><p class="font-s-50">class="font-s-50"</p><p class="font-s-55">class="font-s-55"</p><p class="font-s-60">class="font-s-60"</p><p class="font-s-65">class="font-s-65"</p><p class="font-s-70">class="font-s-70"</p><p class="font-s-75">class="font-s-75"</p><p class="font-s-80">class="font-s-80"</p><p class="font-s-85">class="font-s-85"</p><p class="font-s-90">class="font-s-90"</p>                </div>
+                </div><!-- panel -->
+            </div><!-- col-md-10 -->
+        </div><!-- row -->
+        <script src="//code.jquery.com/jquery.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    </body>
+    </html>
