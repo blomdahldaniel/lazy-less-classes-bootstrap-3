@@ -3,6 +3,11 @@
 My goal is to be as quick as possible while writing code.
 I therefore have come up with some classes that speed things up when I make websites.
 
+## Demo/Docs
+Take a look at the demo and docs if you want to see it in action
+
+[blomdahldaniel.github.io/lazy-less-classes-bootstrap-3](https://blomdahldaniel.github.io/lazy-less-classes-bootstrap-3/)
+
 ## My lazy classes
 Affects:
 * text color
