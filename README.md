@@ -36,6 +36,7 @@ Example:
 Will make a div with info-colored text and on hover it will turn green (success color).
 
 #### Smart hover
+
 Many times you dont want a different color on hover, you want a darkened version of the color.
 Here the smart inheritance comes to play.
 
