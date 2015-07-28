@@ -1,6 +1,6 @@
 var gulp = require('gulp'),
     less = require('gulp-less'),
-  cssmin = require('gulp-cssmin'),
+  cssmin = require('gulp-cssmin')
 
 gulp.task('watch', function () {
   gulp.watch('./*.less', ['less']);
