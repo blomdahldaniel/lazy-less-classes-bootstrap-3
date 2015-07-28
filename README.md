@@ -27,6 +27,7 @@ Affects:
 * text color
 * background color
 * border color
+* pointer class for cursor: pointer
 
 #### colors
 What comes out of the box is all the color-classes that comes with Bootstrap 3:
@@ -70,8 +71,21 @@ Here the smart inheritance comes to play.
 Will give me a div with the background-color info. And on hover, that background will be affected by the less
 function `darken(@color, 10%);`
 
+#### Quick cursor pointer
+Many times if you ad a hover class to something you can want a pointer. Therefore, quicly add the `.pointer` class to your object to use that cursor.
+
+This will add the following css: `cursor: pointer;`
+```
+<div class="bg-info bg-hover pointer">
+  Lorem ipsum.
+</div>
+```
+
 ## Usage
-###### `element-color`
+###### cursor as pointer
+* `.pointer` (adds css `cursor: pointer;`)
+
+###### element-color
 * `text-primary`
 * `bg-success`
 * `border-danger`
@@ -80,7 +94,7 @@ function `darken(@color, 10%);`
 * `bg-success-hover`
 * `border-danger-hover`
 
-###### `element-color`
+###### element-color
 smart inheritance hover, color gets 10% darker.
 * `text-primary text-hover`
 * `bg-success bg-hover`
