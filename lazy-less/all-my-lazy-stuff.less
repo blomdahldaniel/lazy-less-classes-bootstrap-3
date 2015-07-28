@@ -1,8 +1,22 @@
-// adding black and white variable
+/*
+ * Adding black and white variable.
+ * Add these to your variables.less file
+ * if you use your own variables and colors.
+ */
 @black: #000;
 @white: #fff;
 
-@import 'bootstrap-variable-colors';
+/*
+ * Only import this file if you use this as stand-alone
+ * without your own set of bootstrap colors.
+ *
+ * Otherwise you should import this file (@import 'all-my-lazy-stuff';)
+ * together with your bootstrap variables.
+ * (for example inside the bootstrap.less file.)
+ */
+
+//@import 'bootstrap-variable-colors';
+
 @import 'mixins';
 @import 'text-color';
 @import 'font-size';

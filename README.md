@@ -8,6 +8,20 @@ Take a look at the demo and docs if you want to see it in action
 
 [blomdahldaniel.github.io/lazy-less-classes-bootstrap-3](https://blomdahldaniel.github.io/lazy-less-classes-bootstrap-3/)
 
+## Usage/Installation
+##### If you use standard Bootstrap 3 colors
+You can directly use the css files in the `dist` folder.
+
+##### If you have your own set of colors/theme `@brand-*`
+Just copy the lazy-less folder, paste it into your project (for example inside your bootstrap folder) and import the
+all-my-lazy-stuff.less together with the bootstrap `variables.less` files.
+
+Import together with the bootstrap stuff: (for example inside your `bootstrap.less` file)
+```
+// import the lazy-stuff
+@import 'lazy-stuff/all-my-lazy-stuff';
+```
+
 ## My lazy classes
 Affects:
 * text color
@@ -16,6 +30,8 @@ Affects:
 
 #### colors
 What comes out of the box is all the color-classes that comes with Bootstrap 3:
+* white
+* black
 * primary
 * success
 * info
