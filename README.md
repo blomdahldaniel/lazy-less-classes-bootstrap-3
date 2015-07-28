@@ -23,11 +23,10 @@ Import together with the bootstrap stuff: (for example inside your `bootstrap.le
 ```
 
 ## My lazy classes
-Affects:
 * text color
 * background color
 * border color
-* pointer class for cursor: pointer
+* pointer class for `cursor: pointer;`
 
 #### colors
 What comes out of the box is all the color-classes that comes with Bootstrap 3:
